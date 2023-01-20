@@ -26,9 +26,8 @@ bool scan_file(std::string fileName){
 int main(){
 std::cout << "Starting antivirus scan..." << std::endl;
     // Scan all files in the current directory.
-    std::string fileName
-    int n = 1;  // n = number of files in directory.
-    for (int i = 0; i < n; i++){
+    std::string fileName;
+    for (int i = 0; i < 1; i++){
         fileName = "file" + std::to_string(i) + ".txt";
         // Quarantine the infected file.
         std::cout << "Quarantining infected file: " << fileName << std::endl;

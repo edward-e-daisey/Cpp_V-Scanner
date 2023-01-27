@@ -31,7 +31,7 @@ std::cout << "Starting antivirus scan..." << std::endl;
         fileName = "file" + std::to_string(i) + ".txt";
         // Purpose - Quarantine the infected file.
         std::cout << "Quarantining infected file: " << fileName << std::endl;
-        // To Do - Add Quarantine Function
+        // To Do - Add Quarantine Function - Investigate, Potentially Delete
     }
 
     std::cout << "Antivirus scan complete." << std::endl;

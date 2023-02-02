@@ -15,7 +15,6 @@ bool scan_file(std::string fileName){
         if (line.find("VirusSignatureA")!=std::string::npos ||
             line.find("VirusSignatureB")!=std::string::npos ||
             line.find("VirusSignatureC")!=std::string::npos) {
-            std::cout<<"Virus detected in file: " << fileName << std::endl;
             return true;
         }
     }
@@ -33,7 +32,6 @@ std::cout << "Starting antivirus scan..." << std::endl;
         std::cout << "Quarantining infected file: " << fileName << std::endl;
         // To Do - Add Quarantine Function - Investigate, Potentially Delete
     }
-
     std::cout << "Antivirus scan complete." << std::endl;
     return 0;
 }
